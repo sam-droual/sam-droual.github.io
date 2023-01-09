@@ -1,0 +1,38 @@
+@font-face {
+    font-family: IBM Plex Sans SemiBold;
+    src: url("fonts/IBMPlexSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: IBM Plex Mono Bold Italic;
+    src: url("fonts/IBMPlexMono-BoldItalic.woff") format("woff");
+}
+
+.body {
+    background-color: #82EE80;
+    margin: 0px;
+    width: 100%;
+}
+.header {
+    font-family: IBM Plex Sans SemiBold;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.footer {
+    font-family: IBM Plex Mono Bold Italic;
+    text-decoration: none;
+    font-size: 95px;
+    color: #1751c3;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.footer a:hover{
+    color:#82EE80;
+    transition: 0.5s;
+}
+
+.footer a:visited{
+    text-decoration: none;
+}
