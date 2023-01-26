@@ -1,0 +1,167 @@
+
+a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+    }
+    
+    html {
+    scrollbar-width: none;
+    }
+
+
+
+/* pas besoin de .body, si l'élément est connu il se commande avec ce nom */
+body {
+    background-color: #82EE80;
+    margin: 0px;
+    font-family: IBM Plex Mono Bold;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 0.9;
+    display: block;
+    grid-template-columns: 1fr auto;
+    gap: 25px;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+/* '''''' */
+header {
+    font-family: IBM Plex Mono Bold;
+    text-decoration: none;
+    font-size: 218px;
+    line-height: 191.02px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 25px;
+    color: #1751c3;
+    margin: 20px;
+} 
+/* voilà le texte en noir, chaque fois qu'on met cette classe ell se "rajoutent" à son autre class */
+.textBlack {
+    color:black;
+}
+
+.nav a{
+    font-family: IBM Plex Mono Bold;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    grid-template-columns: 1fr auto;
+    gap: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.nav a:hover{
+    color:#82EE80;
+    transition: 0.5s;
+}
+
+/* cette règle nous interesse pour tout le site, donc on pourrai l'applique juste avec sans besoin de .nav ---> a:visited  */
+.nav a:visited{
+    text-decoration: none;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    font-size: 40px;
+    font-family: IBM Plex Sans SemiBold;
+    color: #ffffff;
+    line-height: 1;
+  }
+
+.couv{
+    width: 100vw;
+}
+
+.scene{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+}
+
+.scene img{
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+}
+
+
+.text{
+    padding: 20px;
+    width: 66%;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: IBM Plex Sans;
+}
+
+.films {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.films a {
+    text-align: center;
+}
+
+
+.dates{
+    margin: 20px 0 0 20px;
+    line-height: 1.4;
+    font-size: 50px;
+}
+
+
+footer {
+    font-family: IBM Plex Mono Bold Italic;
+    text-decoration: none;
+    font-size: 95px;
+    color: #1751c3;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    margin: 35px 0px;
+    text-align: center;
+    display: inline-grid;
+
+}
+
+.programme-footer {
+    bottom: 0;
+    margin-top: 100vh;
+    position: absolute;
+}
+
+/* cette règle veut dire: va dans le footer et tu t'appliques à tous les A  */
+footer a {
+    margin-top: 30px;
+    border: 10px solid #1751c3;
+    border-radius: 1000px;
+    width: fit-content;
+    padding: 8px 15px;
+}
+
+footer img {
+width: 100%;
+}
+
+footer a:hover{
+    color:#82EE80;
+    transition: all 0.5s ease-in-out;
+}
+
